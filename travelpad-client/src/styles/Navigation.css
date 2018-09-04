@@ -1,0 +1,33 @@
+.navbar{
+    height: 60px;
+}
+.navbar-nav{
+    height: 100%;
+    border-bottom:2px solid rgba(255, 255, 255, 0.404);
+    width: 100%;
+}
+li{
+    height: 100%;
+    margin-left: 20px;
+    width: 100px;
+    text-align: center;    
+
+}
+.navbar-nav a {
+    position: relative;
+    top:10px;
+    color:#240b36c9;
+}
+a:link{
+    text-decoration: none;
+
+}
+li:hover{
+    background-color: #240b36c9;
+    border-radius: 5%;
+    
+   
+}
+a:hover{
+    color: #ffffff;
+}

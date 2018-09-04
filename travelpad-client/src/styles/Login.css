@@ -1,0 +1,45 @@
+
+.screen1{
+
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius:3%;
+    margin: auto;
+    height: 400px;
+}
+.top{
+    height: 100px;
+}
+.title{
+    text-align: left;
+    position: absolute;
+    color:white;
+    bottom:0;
+}
+.first-block{
+    top: 40px;
+    position: relative;
+
+}
+.second-block{
+    margin-top: 20px;
+}
+.btn-to-register{
+    position: absolute;
+    bottom: 0;
+    margin:0 auto;
+    width: 90%;
+    color: blue;
+}
+#btn-google{
+    color:white;
+    background-color: rgba(241, 33, 33, 0.884);
+}
+#btn-twitter{
+    color:white;
+    background-color: rgba(33, 217, 241, 0.884);
+    margin-left: 8px;
+}
+#btn-facebook{
+    color:white;
+    background-color: rgba(33, 36, 241, 0.884);
+}

@@ -1,0 +1,17 @@
+.card{
+    color:black;
+    height: 300px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+p, h5{
+    color:black;
+
+}
+.card-header{
+    border: none;
+}
+.card-footer{
+    border: none;
+}
