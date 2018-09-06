@@ -13,7 +13,7 @@ class Content extends Component {
         const { body } = this.props;
 
         return (
-            <div className="Cont">
+           
                 <div className="container">
                     <div className="content">
                         <div className="row">
@@ -29,10 +29,6 @@ class Content extends Component {
                         {body}
                     </div>
                 </div>
-
-
-            </div>
-
 
 
 

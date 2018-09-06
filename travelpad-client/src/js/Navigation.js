@@ -6,7 +6,6 @@ import { PropTypes } from 'prop-types';
 class Navigation extends Component {
 
     static propTypes = {
-       
         items: PropTypes.array.isRequired
     };
 
@@ -21,11 +20,11 @@ class Navigation extends Component {
 
     componentWillMount() {
 
-
     }
     render() {
 
         const { items } = this.props;
+        console.log("item selected: ", items.id);
 
         return (
 
@@ -35,7 +34,7 @@ class Navigation extends Component {
                     {
                         items && items.map(
                             (item, key) =>
-                                <li key={key}>
+                                <li key={item.id}>
                                     <Link to={item.url}>{item.title}</Link>
 
                                 </li>

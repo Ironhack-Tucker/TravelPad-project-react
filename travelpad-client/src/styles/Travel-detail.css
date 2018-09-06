@@ -1,0 +1,32 @@
+/* #card-detail{
+    background-color: rgba(255, 255, 255, 0.863);
+   
+    height: 450px;
+    width: 90%;
+}
+#col-card{
+    margin: auto;
+} */
+#travel-detail-card{
+    height: 500px;
+   
+}
+
+#col-trave-detail{
+    margin: auto;
+}
+.corner-div{
+    background-color: rgba(255, 255, 255, 0.767);
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 0;
+    top:0;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    border-right: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-left: 25px solid #50504f;
+    border-bottom: 25px solid #50504f;
+    cursor: pointer;
+}

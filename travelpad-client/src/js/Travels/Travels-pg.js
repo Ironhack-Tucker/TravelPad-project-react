@@ -1,29 +1,39 @@
 import React, { Component } from 'react';
+
 import '../../styles/Travels-page.css'
 import Travel from './Travel';
-import { travels } from '../../data/travels.json';
+import { mine } from '../../data/mine.json';
 class TravelsPg extends Component {
     constructor() {
         //hereda todas las funcionalidades de react
         super();
         //estado de los datos en la app
         this.state = {
-            travels
+            mine,
+
         };
 
     }
+
+    componentWillMount() {
+
+    }
+    getTravel() {
+        return this.state.modalTravel;
+    }
     render() {
-        const travels = this.state.travels.map((travel, i) => {
 
+        const travels = this.state.mine.map((myTravel) => {
 
-            return (<Travel i={i} travelUser={travel.user} travelDescription={travel.description}
-                travelDate={travel.date} travelLocation={travel.location}></Travel>)
+            return (<Travel index={myTravel.id} travelUser={myTravel.user} travelDescription={myTravel.description}
+                travelDate={myTravel.date} travelLocation={myTravel.location}></Travel>)
         });
-        console.log("travels: ", this.state.travels);
         return (
-            <div id="task-row" className="row">
+            <div className="row">
+
                 <div className="col-md-9">
                     <div className="row">
+
                         {travels}
 
                     </div>

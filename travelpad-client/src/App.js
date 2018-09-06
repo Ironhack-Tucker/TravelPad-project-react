@@ -8,12 +8,17 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      filterText: ''
     }
   }
   componentDidMount() {
     this.authListener();
   }
+  filterUpdate(value) {
+    this.setState({
+        filterText: value
+    })
+}
   authListener() {
     //comprueba que esté logueado
     this.setState({

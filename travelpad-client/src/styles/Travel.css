@@ -1,17 +1,24 @@
 .card{
-    color:black;
     height: 300px;
-    border-bottom-right-radius: 12px;
-    border-top-right-radius: 12px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(37, 37, 37, 0.815);
 }
 
 p, h5{
-    color:black;
+    color:rgb(255, 255, 255);
 
 }
-.card-header{
-    border: none;
+.card-footer, .card-header{
+    border: none;     
+    background-color:rgba(37, 37, 37, 0.74);
+  
+
 }
-.card-footer{
-    border: none;
+.card-header:first-child {
+   
+    border-top-right-radius: 20px;
+}
+.card-footer:last-child {
+    border-bottom-right-radius: 20px;
 }
