@@ -19,7 +19,6 @@ const AppRoutes = () =>
             <Route exact path="/travel:id" component={TravelDetail} />
             <Route component={ErrorPage} />
 
-
         </Switch>
 
     </App>;

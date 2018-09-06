@@ -16,12 +16,15 @@ class Travel extends Component {
         this.setState({ redirect: true });
         console.log("selected librito: ", this.props.index);
     }
+    componentWillMount() {
 
+    }
     render() {
 
         if (this.state.redirect) {
             // return <Redirect push to={"/pad:" + this.props.i } />;
-            return <Redirect to={"/pad:" + this.props.index} t={this.props.index} />
+            console.log("index: ", this.props.index);
+            return <Redirect to={"/travel:" + this.props.index} />
         }
 
         return (

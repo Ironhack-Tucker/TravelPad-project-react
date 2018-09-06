@@ -4,24 +4,10 @@ import '../../styles/Pads.css'
 import { Redirect } from 'react-router';
 
 class Pads extends Component {
-    constructor() {
-        super();
-        this.state = {
-            redirect: false
-        }
-    }
 
-    openTravel = () => {
-        this.setState({ redirect: true });
-        console.log("selected librito: ", this.props.index);
-    }
 
     render() {
 
-        if (this.state.redirect) {
-            // return <Redirect push to={"/pad:" + this.props.i } />;
-            return <Redirect to={"/pad:" + this.props.index} t={this.props.index} />
-        }
 
         return (
             <div className="col-md-4" key={this.props.index}>

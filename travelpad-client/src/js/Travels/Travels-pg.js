@@ -18,9 +18,9 @@ class TravelsPg extends Component {
     componentWillMount() {
 
     }
-    getTravel() {
-        return this.state.modalTravel;
-    }
+    // getTravel() {
+    //     return this.state.modalTravel;
+    // }
     render() {
 
         const travels = this.state.mine.map((myTravel) => {

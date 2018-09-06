@@ -14,17 +14,14 @@ class Navigation extends Component {
 
     }
 
-    exitApp() {
-        console.log("Exit..");
-    }
-
+   
     componentWillMount() {
 
     }
     render() {
 
         const { items } = this.props;
-        console.log("item selected: ", items.id);
+      
 
         return (
 
@@ -34,7 +31,7 @@ class Navigation extends Component {
                     {
                         items && items.map(
                             (item, key) =>
-                                <li key={item.id}>
+                                <li key={key}>
                                     <Link to={item.url}>{item.title}</Link>
 
                                 </li>

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import '../../styles/Travel-detail.css';
 import Travel from './Travel';
+import { Redirect } from 'react-router';
+
 class TravelDetail extends Component {
 
     render() {
-        console.log('pad:', this.props);
 
-
+   
         return (
             <div>
                 <div className="content">
@@ -14,7 +15,7 @@ class TravelDetail extends Component {
                         <div id="travel-detail-card" className="card">
                             <div className="card-header">
                                 <div className="corner-div">
-                                
+
                                 </div>
 
                                 <h2>Autor</h2>

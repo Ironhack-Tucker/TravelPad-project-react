@@ -9,26 +9,30 @@ class Content extends Component {
     static propTypes = {
         body: PropTypes.object.isRequired
     };
+    exitApp() {
+        console.log("Exit..");
+    }
+
     render() {
         const { body } = this.props;
 
         return (
-           
-                <div className="container">
-                    <div className="content">
-                        <div className="row">
-                            <div className="col-sm-6">
-                                <h1><a href="/">Travel Pad</a></h1>
-                            </div>
-                            <div className="col-sm-6">
-                                <button className="btn"><i className="fas fa-sign-out-alt"></i></button>
-                            </div>
 
+            <div className="container">
+                <div className="content">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <h1><a href="/">Travel Pad</a></h1>
                         </div>
-                        <Navigation items={items}></Navigation>
-                        {body}
+                        <div className="col-sm-6">
+                            <button className="btn" onClick={this.exitApp}><i className="fas fa-sign-out-alt"></i></button>
+                        </div>
+
                     </div>
+                    <Navigation items={items}></Navigation>
+                    {body}
                 </div>
+            </div>
 
 
 

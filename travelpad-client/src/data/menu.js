@@ -1,7 +1,6 @@
 export default [
 
     {
-        id:1,
         title: 'My travels',
         url: '/my-travels'
 
@@ -9,7 +8,6 @@ export default [
 
 
     {
-        id:2,
         title: 'Travel List',
         url: '/travel-list'
 
