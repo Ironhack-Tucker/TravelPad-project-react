@@ -1,6 +1,5 @@
 
 .screen1{
-
     background-color: rgba(255, 255, 255, 0.521);
     border-radius:3%;
     margin: auto;
@@ -23,7 +22,7 @@
 .second-block{
     margin-top: 20px;
 }
-.btn-to-register{
+.btn-to-register, .btn-to-login{
     position: absolute;
     bottom: 0;
     margin:0 auto;
@@ -42,4 +41,9 @@
 #btn-facebook{
     color:white;
     background-color: rgba(33, 36, 241, 0.884);
+}
+/* Register screen */
+#btn-register{
+    background-color: greenyellow;
+    color:grey;
 }

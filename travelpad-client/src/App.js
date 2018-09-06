@@ -16,9 +16,9 @@ class App extends Component {
   }
   filterUpdate(value) {
     this.setState({
-        filterText: value
+      filterText: value
     })
-}
+  }
   authListener() {
     //comprueba que esté logueado
     this.setState({

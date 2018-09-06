@@ -8,12 +8,13 @@ class Travel extends Component {
     constructor() {
         super();
         this.state = {
-            redirect: false
+            redirect: false,
+           
         }
     }
 
     openTravel = () => {
-        this.setState({ redirect: true });
+        this.setState({ redirect: true,  openDetail: true });
         console.log("selected librito: ", this.props.index);
     }
     componentWillMount() {
@@ -22,10 +23,10 @@ class Travel extends Component {
     render() {
 
         if (this.state.redirect) {
-            // return <Redirect push to={"/pad:" + this.props.i } />;
             console.log("index: ", this.props.index);
-            return <Redirect to={"/travel:" + this.props.index} />
+            return <Redirect to={"travel:" + this.props.index} />
         }
+
 
         return (
             <div className="col-md-4" key={this.props.index}>
@@ -34,8 +35,8 @@ class Travel extends Component {
                     <div className="card-header">
                         <h5>{this.props.travelUser}</h5>
                     </div>
-
                     <div className="card-body" onClick={this.openTravel}>
+                        {/* <div className="card-body" onClick={this.props.openTravel}> */}
                         <p>{this.props.travelDescription}</p>
                         <p>{this.props.travelDate}</p>
 
@@ -54,6 +55,7 @@ class Travel extends Component {
 
         );
     }
+
 }
 
 export default Travel;
